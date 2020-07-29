@@ -1,0 +1,1 @@
+insert into user(name, password) values ('league', '$2a$10$slYQmyNdGzTn7ZLBXBChFOC9f6kFjAqPhccnP6DxlWXx2lPk1C3G6');

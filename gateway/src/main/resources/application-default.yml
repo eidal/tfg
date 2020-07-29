@@ -1,0 +1,23 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+zuul:
+  retryable: false
+  ignored-services: '*'
+  routes:
+    league-management:
+      path: /league-management/**
+      serviceId: league-management
+      stripPrefix: true
+cors:
+  filter:
+    whitelist: ['*']
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+

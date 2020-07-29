@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: ${project.artifactId}
+
+project:
+  artifactId: '@project.artifactId@'
+  name: '@project.name@'
+  version: '@project.version@'
+  description: '@project.description@'
+  groupId: '@project.groupId@'
+
